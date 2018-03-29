@@ -91,14 +91,16 @@
         // },
     })
 
-    var iscroll = new IScroll(".content", {
-        mouseWheel: true, //鼠标滚轮滚动
-        scrollbars: true,//滚动条,
-        shrinkScrollbars: "scale"
-    });
+
 
 </script>
 <script>
+    var iscroll = new IScroll(".content", {
+        mouseWheel: true, //鼠标滚轮滚动
+        scrollbars: true,//滚动条,
+        shrinkScrollbars: "scale",
+        click:true;
+    });
     var state = "project";
     $(".add").click(function () {
         $(".mask").show();
